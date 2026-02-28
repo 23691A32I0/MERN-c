@@ -2,9 +2,32 @@
 <html lang="en">
 <head>
     <title>javascript</title>
-    <link rel="stylesheet" href="D:\github\MERN-c\css\Screenshot 2025-04-20 155533.png">
+    <link rel="icon" href="D:\github\MERN-c\javascript\Screenshot 2025-04-20 155533.png">
 </head>
 <body>
-    <script src="./script.js"></script>
+    <ul id=""list>
+
+    </ul>
+    <button id="btn">click</button>
+    <!-- <p id="para">Lorem ipsum dolor sit amet.</p>
+    <p clase="paral">Lorem ipsum dolor sit amet.</p> -->
+    <script>
+        const btn=document.getElementById("btn");
+        btn.addEventListener("click",function(){
+            const li=document.createElement("li");
+            li.innerText="new li";
+            document.getElementById("list").append(li);
+        })
+    // document.getElementById("para").textContent="<p>hello world</p>"
+    // document.getElementById("para").innerText="hello world";
+    // document.getElementById("para").innerText="<p>hello world</p>"
+    // var para=document.getElementById("para");
+    // console.log(para);
+    // para.style.color="green"//or you can use document.getElementById("para") instead of para
+    // para.style.backgroundColor="yellow"
+    // para.style.fontSize="20px"
+    // var paral=document.getElementsByClassName("paral");
+    // console.log(paral)
+    </script>
 </body>
 </html>
