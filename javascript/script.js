@@ -1,96 +1,95 @@
-/*console.log("Hello world")
-// //reinitialize and redeclare
-// var a;
-// a=10;
-// var a;
-// a=20;
-// //reinitialize
-// let b=10;
-// //let b;
-// b=99;
-// //canot redeclare or reinitialize
-// const c=22;
-// console.log(a);
-// console.log(b);
+// console.log("Hello world")
+// // //reinitialize and redeclare
+// // var a;
+// // a=10;
+// // var a;
+// // a=20;
+// // //reinitialize
+// // let b=10;
+// // //let b;
+// // b=99;
+// // //canot redeclare or reinitialize
+// // const c=22;
+// // console.log(a);
+// // console.log(b);
+// // console.log(c);
+// var num=10;
+// var str="yash";
+// var bool=true;
+// var un;
+// var nu=null;
+// var big=488748387439n;
+// var symbol=Symbol('li');
+
+// console.log(typeof num);
+// console.log(typeof str);
+// console.log(typeof bool);
+// console.log(typeof un);
+// console.log(typeof nu);
+// console.log(typeof big);
+// console.log(typeof symbol);
+
+// var arr=[1,2,3,4,5]
+// console.log(typeof arr);
+// console.log(arr);
+
+// var obj={
+//     name:"yash",
+//     dept:"DS"
+// }
+// console.log(obj);
+// console.log(typeof obj);
+// var a=5;
+// const result=(a%2==0) ? '${a} is even':'${a} is odd';
+// console.log(result);
+// var a=80;
+// const res=(a>90 && a<=100)?'A grade':(a>=80&&a<=90)?'B grade':(a>70&&a<80)?'c grade':'D grade';
+// console.log(res)
+
+// var day=5;
+// switch(day){
+//     case 1:{
+//         console.log("sun");
+//         break;
+//     }
+//     case 2:{
+//         console.log("mon");
+//         break;
+//     }
+//     case 3:{
+//         console.log("tue");
+//         break;
+//     }
+//     case 4:{
+//         console.log("wed");
+//         break;
+//     }
+//     case 5:{
+//         console.log("thu");
+//         break;
+//     }
+//     case 6:{
+//         console.log("fri");
+//         break;
+//     }
+//     case 7:{
+//         console.log("sat");
+//         break;
+//     }
+//     default:{
+//         console.log("invalid day")
+//     }
+// }
+// for(let i=0;i<=10;i++){
+//     console.log(i);
+// }
+// var num=1234;
+// var c=0;
+// while(num>0){
+//     c++;
+//     num=Math.floor(num/10);
+// }
 // console.log(c);
-var num=10;
-var str="yash";
-var bool=true;
-var un;
-var nu=null;
-var big=488748387439n;
-var symbol=Symbol('li');
-
-console.log(typeof num);
-console.log(typeof str);
-console.log(typeof bool);
-console.log(typeof un);
-console.log(typeof nu);
-console.log(typeof big);
-console.log(typeof symbol);
-
-var arr=[1,2,3,4,5]
-console.log(typeof arr);
-console.log(arr);
-
-var obj={
-    name:"yash",
-    dept:"DS"
-}
-console.log(obj);
-console.log(typeof obj);*/
-/*var a=5;
-const result=(a%2==0) ? '${a} is even':'${a} is odd';
-console.log(result);*/
-/*var a=80;
-const res=(a>90 && a<=100)?'A grade':(a>=80&&a<=90)?'B grade':(a>70&&a<80)?'c grade':'D grade';
-console.log(res)*/
-/*
-var day=5;
-switch(day){
-    case 1:{
-        console.log("sun");
-        break;
-    }
-    case 2:{
-        console.log("mon");
-        break;
-    }
-    case 3:{
-        console.log("tue");
-        break;
-    }
-    case 4:{
-        console.log("wed");
-        break;
-    }
-    case 5:{
-        console.log("thu");
-        break;
-    }
-    case 6:{
-        console.log("fri");
-        break;
-    }
-    case 7:{
-        console.log("sat");
-        break;
-    }
-    default:{
-        console.log("invalid day")
-    }
-}*/
-/*
-for(let i=0;i<=10;i++){
-    console.log(i);
-}
-var num=1234;
-var c=0;
-while(num>0){
-    c++;
-    num=Math.floor(num/10);
-}
-console.log(c);*/
 // var a=0;
 // do{
 //     console.log("Example");
@@ -190,7 +189,7 @@ console.log(c);*/
 // })
 
 // var arr=[1,2,3,4]
-// //map
+
 // var double=arr.map((val)=>(val*2));
 // console.log(double);
 // //filter
@@ -216,9 +215,9 @@ console.log(c);*/
 
 //scope
 //global scope//var
-// var a=20;//global scope
+// var a=20;
 // if(true){
-//     var b=10;//block scope
+//     var b=10;
 // }
 // console.log(a);
 // console.log(b);
@@ -277,13 +276,13 @@ console.log(c);*/
 // .catch((err)=>console.log(err));
 
 //async and await
-const getData=async()=>{
-    try{
-       const res= await fetch("https://jsonplaceholder.typicode.com/users");
-       const data=await res.json();
-       console.log(data);
-    }catch(err){
-        console.log(err)
-    }
-}
-getData();
+// const getData=async()=>{
+//     try{
+//        const res= await fetch("https://jsonplaceholder.typicode.com/users");
+//        const data=await res.json();
+//        console.log(data);
+//     }catch(err){
+//         console.log(err)
+//     }
+// }
+// getData();
