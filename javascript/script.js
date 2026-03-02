@@ -189,7 +189,7 @@ console.log(c);*/
 //     console.log(Val,index);
 // })
 
-var arr=[1,2,3,4]
+// var arr=[1,2,3,4]
 // //map
 // var double=arr.map((val)=>(val*2));
 // console.log(double);
@@ -216,9 +216,74 @@ var arr=[1,2,3,4]
 
 //scope
 //global scope//var
-var a=20;//global scope
-if(true){
-    var b=10;//block scope
+// var a=20;//global scope
+// if(true){
+//     var b=10;//block scope
+// }
+// console.log(a);
+// console.log(b);
+
+
+//promise
+// const promise =new Promise((resolve,reject)=>{
+//     var success=true;
+//     if(success){
+//         resolve("task completed");
+//     }
+//     else{
+//         reject("task not completed");
+//     }
+// })
+// promise.then((message)=>{
+//     console.log(message);
+// }).catch((err)=>{
+//     console.log(err);
+// })
+
+//setTimeout
+// const promise =new Promise((resolve,reject)=>{
+//     var success=true;
+//     if(success){
+//         setTimeout(()=>{
+//              resolve("task completed");
+//         },5000);
+//     }
+//     else{
+//         reject("task not completed");
+//     }
+// })
+// promise.then((message)=>{
+//     console.log(message);
+// }).catch((err)=>{
+//     console.log(err);
+// })
+
+//setInterval
+// var c=1;
+// const IntervalCount =setInterval(()=>{
+//     console.log(c);
+//     c++;
+//     if(c>5){
+//         clearInterval(IntervalCount)
+//     }
+// },2000);
+
+//fetch
+// const getData=()=>{
+//     return fetch("https://jsonplaceholder.typicode.com/users")
+// }
+// getData().then((res)=>res.json())
+// .then ((data)=>console.log(data))
+// .catch((err)=>console.log(err));
+
+//async and await
+const getData=async()=>{
+    try{
+       const res= await fetch("https://jsonplaceholder.typicode.com/users");
+       const data=await res.json();
+       console.log(data);
+    }catch(err){
+        console.log(err)
+    }
 }
-console.log(a);
-console.log(b);
+getData();
