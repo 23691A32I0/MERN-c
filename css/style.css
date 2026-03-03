@@ -1,0 +1,32 @@
+span{
+            color:aqua;
+            font-size:large;
+    }
+.subhead{
+    font-family: sans-serif;
+}
+#para{
+    background-color:black;
+    color: red;
+}
+span,.subhead,h1{
+    background-color:antiquewhite;
+}
+*{
+    background-color: silver;
+}
+div p{
+    color:blue;
+}
+div>p{
+    color:blueviolet;
+}
+input[type="text"]{
+    color:brown
+}
+h1 + p{
+    color: darkcyan;
+}
+h1 ~ p{
+    color:darkgoldenrod
+}
