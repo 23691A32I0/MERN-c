@@ -18,6 +18,15 @@ const Navbar = () => {
                 <li className="list">
                     <Link to="/services" className="link">Services</Link>
                 </li>
+                <li className="list">
+                    <Link to="/Hooks" className="link">Hooks</Link>
+                </li>
+                <li className="list">
+                    <Link to="/login" className="link">Login</Link>
+                </li>
+                <li className="list">
+                    <Link to="/signup" className="link">Signup</Link>
+                </li>
                 {/* syntax: <Link to="path">name</Link>*/}
             </ul>
         </nav>
