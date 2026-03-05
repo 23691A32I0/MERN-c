@@ -14,9 +14,10 @@ import React from 'react'
 // export default Child
 
 //destructure
-const Child = ({name,age,isActive,food,contact}) => {
+const Child = ({name,age,isActive,food,contact,sendMessage}) => {
   return (
     <div>
+
         <h1>Name:{name}</h1>
         <h2>Age:{age}</h2>
         <h3>Active Status:{isActive?"Active":"notActive"}</h3>
@@ -33,6 +34,7 @@ const Child = ({name,age,isActive,food,contact}) => {
         <p>Email:{contact.email}</p>
         <br />
         <hr />
+        <button onClick={()=>{sendMessage("Message from child")}}>sendMessage</button>
     </div>
   )
 }

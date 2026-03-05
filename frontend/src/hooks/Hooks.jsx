@@ -9,6 +9,8 @@ const Hooks = () => {
             <li><Link to="form" className='nestedLink'>form</Link></li>
             <li><Link to="effect" className='nestedLink'>Effect</Link></li>
             <li><Link to="effectwithapi" className='nestedLink'>Effectap</Link></li>
+            <li><Link to="useRef" className='nestedLink'>Ref</Link></li>
+            <li><Link to="useReducer" className='nestedLink'>Reducer</Link></li>
         </ul>
         <Outlet/>
     </div>

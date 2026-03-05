@@ -11,6 +11,8 @@ import Effect from "./hooks/Effect";
 import EffectWithApi from "./hooks/EffectWithApi";
 import Login from "./auth/Login";
 import Signup from "./auth/Signup";
+import Ref from "./hooks/Ref";
+import Reducer from "./hooks/Reducer";
 const App = () => {
   return (
     <>
@@ -27,6 +29,8 @@ const App = () => {
     <Route path="form" element={<Form/>}/>
     <Route path="effect" element={<Effect/>}/>
     <Route path="effectwithapi" element={<EffectWithApi/>}/>
+    <Route path="useRef" element={<Ref/>}/>
+    <Route path="useReducer" element={<Reducer/>}/>
     </Route>
     </Routes>
     </>
