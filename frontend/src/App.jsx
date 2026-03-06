@@ -13,6 +13,9 @@ import Login from "./auth/Login";
 import Signup from "./auth/Signup";
 import Ref from "./hooks/Ref";
 import Reducer from "./hooks/Reducer";
+import Memo from "./hooks/Memo";
+import Callback from "./hooks/Callback";
+import Todo from "./components/Todo";
 const App = () => {
   return (
     <>
@@ -24,6 +27,7 @@ const App = () => {
     <Route path="/services" element={<Services/>}/>{/*class components*/}
     <Route path="/login" element={<Login/>}/>
     <Route path="/signup" element={<Signup/>}/>
+    <Route path="/todo" element={<Todo/>}/>
     <Route path="/hooks" element={<Hooks/>}>
       <Route path="useState" element={<State/>}/>
     <Route path="form" element={<Form/>}/>
@@ -31,6 +35,8 @@ const App = () => {
     <Route path="effectwithapi" element={<EffectWithApi/>}/>
     <Route path="useRef" element={<Ref/>}/>
     <Route path="useReducer" element={<Reducer/>}/>
+    <Route path="useMemo" element={<Memo/>}/>
+    <Route path="useCallback" element={<Callback/>}/>
     </Route>
     </Routes>
     </>
