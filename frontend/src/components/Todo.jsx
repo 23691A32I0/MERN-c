@@ -6,9 +6,9 @@ const Todo = () => {
     const [task,setTask]=useState('');
     const [todos,setTodos]=useState([]);
     const[edit,setEdit]=useState(null);
-    const api=`http://localhost:4000/api/todo`
+    const api=`https://mern-c-2p4e.onrender.com`
     const fetchTodo=async()=>{
-        const res= await axios.get(`http://localhost:4000/api/todo`)
+        const res= await axios.get(`${api}/api/todo`)
         setTodos(res.data)
     }
     useEffect(()=>{
@@ -17,21 +17,21 @@ const Todo = () => {
     },[])
     const handleAddoredit=async()=>{
         if(edit){
-            await axios.put(`http://localhost:4000/api/todo/update/${edit}`,{task})
+            await axios.put(`${api}/api/todo/update/${edit}`,{task})
             setEdit(null);
         }
         else{
-            await axios.post(`http://localhost:4000/api/todo/create`,{task})
+            await axios.post(`${api}/api/todo/create/`,{task})
         }
         setTask('');
         fetchTodo();
-    };
+    }
     const handleDelete=async(id)=>{
-        await axios.delete(`http://localhost:4000/api/todo/delete/${id}`)
+        await axios.delete(`${api}/api/todo/delete/${id}`)
         fetchTodo();
     };
     const handleToggleStatus=async(todo)=>{
-        await axios.put(`http://localhost:4000/api/todo/update/${todo._id}`,{
+        await axios.put(`${api}/api/todo/update/${todo._id}`,{
             completed:!todo.completed
         })
         fetchTodo();
