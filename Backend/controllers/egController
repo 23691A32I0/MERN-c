@@ -1,0 +1,13 @@
+exports.getController=(req,res)=>{
+    res.send("get route is working")
+}
+exports.postController=(req,res)=>{
+    res.send("post route is working")
+}
+exports.putController=(req,res)=>{
+    res.send("put route is working")
+}
+exports.deleteController=(req,res)=>{
+    res.send("delete route is working")
+}
+
